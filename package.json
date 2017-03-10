@@ -1,0 +1,21 @@
+{
+  "name": "gapi-nano",
+  "version": "1.0.0",
+  "description": "a wrapper for Google API Client Library for using Google Apps Script REST Execution API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "browserify index.js --standalone gapi-nano > dist/gapi-nano.js"
+  },
+  "keywords": [
+    "gapi",
+    "google",
+    "api",
+    "google app scripts",
+    "rest execution api"
+    "client",
+    "google apis",
+  ],
+  "author": "Jason Yung",
+  "license": "ISC"
+}
