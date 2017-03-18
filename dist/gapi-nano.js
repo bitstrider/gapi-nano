@@ -25,7 +25,7 @@ function init(options, authListener) {
                 authListener(authInstance.isSignedIn.get());
             }
         }, (err) => {
-            console.error("could not create GoogleAuth object instance:", error)
+            console.error("could not create GoogleAuth object instance:", err)
         })
 
     })
@@ -47,7 +47,13 @@ function run(fName, parameters) {
             parameters
         }
     }).then((data) => {
+        if(data.error) {
+          console.error("script execution error:", data.error)
+          return data.error
+        }
         return data.result.response.result
+    }, function (err) {
+        console.error("failed to request script execution:", err)
     })
 }
 

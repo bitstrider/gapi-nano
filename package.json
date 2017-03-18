@@ -1,6 +1,6 @@
 {
   "name": "gapi-nano",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a wrapper for Google API Client Library for using Google Apps Script REST Execution API",
   "main": "index.js",
   "repository":{
@@ -16,9 +16,9 @@
     "google",
     "api",
     "google app scripts",
-    "rest execution api"
+    "rest execution api",
     "client",
-    "google apis",
+    "google apis"
   ],
   "author": "Jason Yung",
   "license": "ISC"
